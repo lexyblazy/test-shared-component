@@ -1,0 +1,206 @@
+@import './mixins';
+
+$theme-color: #d93337;
+$theme-white: #fff;
+$theme-black: #202931;
+$theme-header-text: unquote('#202931de');
+$theme-body-text: #525f7f;
+$body-color: #f7f7f7;
+$footer-background: #f6f9fc;
+$shadow-color: unquote('#00000026');
+$slash-theme: #d93337;
+
+//Fonts
+$theme-font: 'Averta', Arial, sans-serif;
+%registration-header {
+  font-weight: 500;
+  font-size: 1.68rem;
+  margin: 1.5rem 0;
+  line-height: 2rem;
+  color: $theme-body-text;
+}
+
+%input {
+  ::placeholder {
+    color: rgba(45, 64, 83, 0.3);
+  }
+  border: none;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+  border-radius: 0;
+  width: 400px;
+  margin-bottom: 1rem;
+}
+
+%plainButton {
+  border: none;
+  padding: 0;
+  background: transparent;
+  margin: 5px 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+%slide-arrow {
+  position: absolute;
+  color: $theme-white;
+  font-size: 2rem;
+  background: $theme-color;
+  z-index: 100;
+  border: 0px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.09) 0px 1px 4px 0px;
+  transition: opacity 200ms linear 0s;
+  text-align: center;
+  line-height: 1;
+  color: $theme-white;
+  top: 100px;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+%button {
+  background: $theme-color;
+  color: #fff;
+  margin: 1rem 0;
+  width: 17rem;
+  height: 3rem;
+}
+
+%banner_container {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include screen(small) {
+  }
+  @include screen(med) {
+  }
+  @include screen(large) {
+  }
+  @include screen(xxlarge) {
+    max-width: 90%;
+  }
+}
+
+%home_main_container {
+  @extend %banner_container;
+}
+
+%home__category__wrap {
+  @extend %banner_container;
+}
+
+%section-centered {
+  width: 100%;
+  margin: 0 auto;
+  @include screen(med) {
+    margin: 1rem auto;
+  }
+}
+
+%section-wrap {
+  @extend %section-centered;
+  max-width: 95%;
+  @include screen(small) {
+  }
+  @include screen(med) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @include screen(xxlarge) {
+    max-width: 90%;
+  }
+}
+
+%side-nav-section-wrap {
+  @extend %section-centered;
+  max-width: 85%;
+  @include screen(med) {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 1rem;
+  }
+}
+
+%checkout-wrap {
+  @extend %section-centered;
+  max-width: 85%;
+  @include screen(med) {
+    max-width: 95%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @include screen(xxlarge) {
+    max-width: 90%;
+  }
+}
+
+%review-wrap {
+  @extend %section-centered;
+  max-width: 85%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include screen(small) {
+    max-width: 100%;
+  }
+  @include screen(xxlarge) {
+    max-width: 85%;
+  }
+}
+
+%registration-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  max-width: 45rem;
+}
+
+%guest__works__block {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 90%;
+
+  @include screen(small) {
+    max-width: 100%;
+  }
+}
+
+%nav__container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+%promo {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include screen(small) {
+    max-width: 100%;
+    padding: 0;
+  }
+  @include screen(med) {
+  }
+  @include screen(large) {
+  }
+  @include screen(xxlarge) {
+    max-width: 90%;
+  }
+}

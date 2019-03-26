@@ -1,0 +1,33 @@
+@import '../../assets/css/partials/variables';
+
+.loading-btn {
+  width: 17rem;
+  height: 50px;
+  margin: 0.7rem 0;
+  background: $theme-color;
+  border: $theme-color;
+  color: $theme-white;
+  position: relative;
+  &:hover{
+    background-color: lighten($color: $theme-color, $amount: 9) !important; 
+  }
+  &.loading {
+    background: lighten($color: $theme-color, $amount: 30); 
+    color: lighten($color: $theme-white, $amount: 80);
+
+    .loader {
+      display: block;
+    }
+  }
+
+  .loader {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none;
+  }
+
+  @include screen(small) {
+    width: 100%;
+  }
+}

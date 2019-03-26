@@ -1,0 +1,35 @@
+/* MIXINS FOR MEDIA QUERIES ----------- */
+.product-list__items__grid__spinbox {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 10px;
+  padding: 2px;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 100%;
+  z-index: 4;
+  top: -10px; }
+  .product-list__items__grid__spinbox i {
+    font-size: 1.4rem;
+    color: #d93337; }
+  .product-list__items__grid__spinbox .form-holder {
+    padding: 5px 0; }
+    .product-list__items__grid__spinbox .form-holder .form-control {
+      border: none;
+      text-align: center;
+      font-weight: 500;
+      color: #202931;
+      height: 1.7rem;
+      background: white; }
+  .product-list__items__grid__spinbox button {
+    background: #fff;
+    background-image: none;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+    .product-list__items__grid__spinbox button:focus {
+      outline: none; }
+    .product-list__items__grid__spinbox button:hover {
+      background: white; }

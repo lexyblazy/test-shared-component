@@ -1,0 +1,55 @@
+@import '../../assets/css/partials/variables';
+
+.product-list__items__grid__spinbox {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 10px;
+  padding: 2px;
+  // margin: 5px;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 100%;
+  z-index: 4;
+  top: -10px;
+
+  i {
+    font-size: 1.4rem;
+    color: $theme-color;
+
+    // &:active, &:focus{
+    //   outline: none;
+    //   font-size: 1.2rem;
+
+    // }
+  }
+  .form-holder {
+    padding: 5px 0;
+
+    .form-control {
+      border: none;
+      text-align: center;
+      font-weight: 500;
+      color: $theme-black;
+      height: 1.7rem;
+      background: white;
+    }
+  }
+
+  button {
+    background: #fff;
+    background-image: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: $theme-color + 240;
+    }
+  }
+}

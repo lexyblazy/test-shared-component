@@ -1,0 +1,24 @@
+/* MIXINS FOR MEDIA QUERIES ----------- */
+.loading-btn {
+  width: 17rem;
+  height: 50px;
+  margin: 0.7rem 0;
+  background: #d93337;
+  border: #d93337;
+  color: #fff;
+  position: relative; }
+  .loading-btn:hover {
+    background-color: #e05a5d !important; }
+  .loading-btn.loading {
+    background: #f1b4b5;
+    color: white; }
+    .loading-btn.loading .loader {
+      display: block; }
+  .loading-btn .loader {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none; }
+  @media screen and (max-width: 767px) {
+    .loading-btn {
+      width: 100%; } }

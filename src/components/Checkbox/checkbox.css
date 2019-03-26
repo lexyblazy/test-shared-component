@@ -1,0 +1,9 @@
+.checkbox.checked label::before {
+  background-color: #d93337 !important; }
+
+.checkbox.checked label::after {
+  content: '\F12C' !important;
+  font-family: 'Material Design Icons';
+  font-weight: bold;
+  top: unset !important;
+  color: white; }

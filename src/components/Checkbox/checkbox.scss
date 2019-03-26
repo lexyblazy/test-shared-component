@@ -1,0 +1,13 @@
+$theme-color: #d93337;
+.checkbox.checked label::before {
+  background-color: $theme-color !important;
+}
+
+.checkbox.checked label::after {
+  content: '\F12C' !important;
+  font-family: 'Material Design Icons';
+  font-weight: bold;
+  top: unset !important  ;
+  color: white;
+}
+
